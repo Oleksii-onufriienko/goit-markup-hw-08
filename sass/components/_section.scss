@@ -1,0 +1,24 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--button-select-text-color);
+
+    &__title {
+      margin-bottom: 50px;
+    
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+    }
+
+    &--padd-minus {
+      padding-top: 0;
+    }
+  }
+  
+  .section h1,
+  .section h2,
+  .section h3 {
+    color: var(--title-text-color);
+  }

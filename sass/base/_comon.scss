@@ -1,0 +1,32 @@
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+  
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    width: 1200px;
+  }
+  
+  .page {
+    color: var(--primary-text-color);
+    background-color: #f5f5f5;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+  }
+  
+  .page.portfolio {
+    background-color: #ffffff;
+  }

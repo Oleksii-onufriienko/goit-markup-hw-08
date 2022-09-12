@@ -1,0 +1,23 @@
+/* #757575 основной цвет текста обзацев  */
+/* #212121 основной зоголовков */
+/* #2196F3 цвет выделения */
+/* #F5F5F5; основной цвет фона  */
+/* #F5F4FA вторичный цвет фона */
+/* #FFFFFF цвет фона хэдера */
+/* #2F303A колір футера */
+/* #F5F4FA колір bg кпопок */
+/*  */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --select-text-color: #2196f3;
+    --addr-color-tel-mail: rgba(255, 255, 255, 0.6);
+    --addr-color-city: #ffffff;
+    --footer-bg-color: #2f303a;
+    --second-color-logo-footer: #ffffff;
+    --button-bg-color: #f5f4fa;
+    --button-text-color: #212121;
+    --button-select-color: #2196f3;
+    --button-select-text-color: #ffffff;
+    --bg-team-section-color: #f5f4fa;
+  }
