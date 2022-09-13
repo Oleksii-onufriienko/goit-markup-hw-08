@@ -1,24 +1,37 @@
 .feauture-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 
   &__item {
-    width: 270px;
 
-    &:not(:last-child) {
-      margin-right: 30px;
+    @media screen and(min-width: $mobile) {
+      width: 450px;
     }
 
+    @media screen and(min-width: $tablet) {
+      width: 354px;
+    }
+
+    @media screen and(min-width: $desktop) {
+      width: 270px;
+    }
   }
 
-
   &__title {
-    margin-bottom: 10px;
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    @media screen and(min-width: $mobile) {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    @media screen and(min-width: $tablet) {
+      text-align: left;
+    }
   }
 
   &__text {
@@ -29,14 +42,27 @@
 
 }
 
+
 .feauture__icon-box {
   display: flex;
-  width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   justify-content: center;
   border-radius: 4px;
   margin-bottom: 30px;
+
+  @media screen and(min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and(min-width: $tablet) {
+
+    width: 354px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    width: 270px;
+  }
 }
 
 .feauture__icon {

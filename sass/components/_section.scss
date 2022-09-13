@@ -1,24 +1,53 @@
 .section {
+
+  background-color: var(--button-select-text-color);
+
+
+
+  @media screen and(min-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and(min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--button-select-text-color);
+  }
 
-    &__title {
-      margin-bottom: 50px;
-    
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.17;
-      text-align: center;
+  &--padd-minus {
+
+    @media screen and(min-width: $mobile) {
+      display: none;
     }
 
-    &--padd-minus {
+    @media screen and(min-width: $tablet) {
+      display: none;
+    }
+
+    @media screen and(min-width: $desktop) {
+      display: block;
       padding-top: 0;
     }
+
   }
-  
-  .section h1,
-  .section h2,
-  .section h3 {
-    color: var(--title-text-color);
+
+  &__title {
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+
+    @media screen and(min-width: $desktop) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
   }
+}
+
+.section h1,
+.section h2,
+.section h3 {
+  color: var(--title-text-color);
+}

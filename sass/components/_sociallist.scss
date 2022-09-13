@@ -2,6 +2,10 @@
   display: block;
   min-width: 206px;
 
+  @media screen and(min-width: $desktop) {
+    margin-bottom: 0px;
+  }
+
 }
 
 .social__svg {
@@ -11,7 +15,13 @@
 
 .social__list {
   display: flex;
-  margin-left: 32px;
+
+  justify-content: center;
+
+  @media screen and(min-width: $desktop) {
+    justify-content: left;
+    margin-left: 0px;
+  }
 
   .item {
     display: flex;

@@ -8,7 +8,8 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
     <link rel="stylesheet" href="css/portfolio.min.css">
 </head>
 
@@ -21,7 +22,7 @@
                 <li class="site-nav__item"><a class="site-nav__link current" href="./portfolio.html">Портфоліо</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="">Контакти</a></li>
             </ul>
-    
+
             <ul class="auth-nav">
                 <li class="auth-nav__item">
                     <a class="auth-nav__link" href="mailto:info@devstudio.com">
@@ -55,15 +56,27 @@
                     <li class="button-list__item"><button class="button-list__button">Дизайн</button></li>
                     <li class="button-list__item"><button class="button-list__button">Маркетинг</button></li>
                 </ul>
-        
+
                 <!-- Елементи портфолио -->
                 <ul class="portfolio-list">
                     <li class="portfolio-list__item">
                         <a class="portfolio__card" href="">
                             <div class="portfolio-wrap">
-                                <img src="./images/tehnokryak.jpg" alt="Ноутбук із відкритим сайтом" width="370">
+                                <!-- <img src="./images/tehnokryak.jpg" alt="Ноутбук із відкритим сайтом" width="370"> -->
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/img1200.jpg, ./images/portfolio/img1200@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/img768.jpg, ./images/portfolio/img768@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/img480.jpg, ./images/portfolio/img480@2x.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/img-1200.jpg" alt="Ноутбук із відкритим сайтом">
+                                </picture>
+
                                 <p class="shadow__text">
-                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                    це
                                     дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -78,158 +91,259 @@
                     <li class="portfolio-list__item">
                         <a class="portfolio__card" href="">
                             <div class="portfolio-wrap">
-                                <img src="./images/postno.jpg" alt="Баскетболісти грають" width="370">
+                                <!-- <img src="./images/postno.jpg" alt="Баскетболісти грають" width="370"> -->
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/img1200-1.jpg, ./images/portfolio/img1200@2x-1.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/img768-1.jpg, ./images/portfolio/img768@2x-1.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/img480-1.jpg, ./images/portfolio/img480@2x-1.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/img-1200-1.jpg" alt="Баскетболісти грають">
+                                </picture>
+
                                 <p class="shadow__text">
-                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                    це
                                     дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </p>
                             </div>
-        
+
                             <div class="portfolio-list__project">
                                 <h2 class="card__header">Постер New Orlean vs Golden Star</h2>
                                 <p class="card__text">Дизайн</p>
-        
+
                             </div>
                         </a>
                     </li>
                     <li class="portfolio-list__item">
                         <a class="portfolio__card" href="">
                             <div class="portfolio-wrap">
-        
-                                <img src="./images/seafood.jpg" alt="Малюнок риби" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/img1200-2.jpg, ./images/portfolio/img1200@2x-2.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/img768-2.jpg, ./images/portfolio/img768@2x-2.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/img480-2.jpg, ./images/portfolio/img480@2x-2.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/img-1200-2.jpg" alt="Малюнок риби">
+                                </picture>
+
                                 <p class="shadow__text">
-                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                    це
                                     дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </p>
                             </div>
-        
+
                             <div class="portfolio-list__project">
                                 <h2 class="card__header">Ресторан Seafood</h2>
                                 <p class="card__text">Додаток</p>
-        
+
                             </div>
                         </a>
                     </li>
                     <li class="portfolio-list__item">
                         <a class="portfolio__card" href="">
                             <div class="portfolio-wrap">
-        
-                                <img src="./images/primepr.jpg" alt="Навушники" width="370">
+
+                                <!-- <img src="./images/primepr.jpg" alt="Навушники" width="370"> -->
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/img1200-3.jpg, ./images/portfolio/img1200@2x-3.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/img768-3.jpg, ./images/portfolio/img768@2x-3.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/img480-3.jpg, ./images/portfolio/img480@2x-3.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/img-1200-3.jpg" alt="Навушники">
+                                </picture>
+
                                 <p class="shadow__text">
-                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                    це
                                     дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </p>
                             </div>
-        
+
                             <div class="portfolio-list__project">
                                 <h2 class="card__header">Проєкт Prime</h2>
                                 <p class="card__text">Маркетинг</p>
-        
+
                             </div>
                         </a>
                     </li>
                     <li class="portfolio-list__item">
                         <a class="portfolio__card" href="">
                             <div class="portfolio-wrap">
-        
-                                <img src="./images/boxes.jpg" alt="Дві коробки" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/img1200-4.jpg, ./images/portfolio/img1200@2x-4.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/img768-4.jpg, ./images/portfolio/img768@2x-4.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/img480-4.jpg, ./images/portfolio/img480@2x-4.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/img-1200-4.jpg" alt="Дві коробки">
+                                </picture>
+
                                 <p class="shadow__text">
-                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                    це
                                     дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </p>
                             </div>
-        
+
                             <div class="portfolio-list__project">
                                 <h2 class="card__header">Проєкт Boxes</h2>
                                 <p class="card__text">Додаток</p>
-        
+
                             </div>
                         </a>
                     </li>
                     <li class="portfolio-list__item">
                         <a class="portfolio__card" href="">
                             <div class="portfolio-wrap">
-                                <img src="./images/monitor.jpg" alt="Монітор" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/img1200-5.jpg, ./images/portfolio/img1200@2x-5.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/img768-5.jpg, ./images/portfolio/img768@2x-5.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/img480-5.jpg, ./images/portfolio/img480@2x-5.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/img-1200-5.jpg" alt="Монітор">
+                                </picture>
+
                                 <p class="shadow__text">
-                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                    це
                                     дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </p>
                             </div>
-        
+
                             <div class="portfolio-list__project">
                                 <h2 class="card__header">Inspiration has no Borders</h2>
                                 <p class="card__text">Веб-сайт</p>
-        
+
                             </div>
                         </a>
                     </li>
                     <li class="portfolio-list__item">
                         <a class="portfolio__card" href="">
                             <div class="portfolio-wrap">
-        
-                                <img src="./images/book.jpg" alt="Відкрита книга" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/img1200-6.jpg, ./images/portfolio/img1200@2x-6.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/img768-6.jpg, ./images/portfolio/img768@2x-6.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/img480-6.jpg, ./images/portfolio/img480@2x-6.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/img-1200-6.jpg" alt="Відкрита книга">
+                                </picture>
+
                                 <p class="shadow__text">
-                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                    це
                                     дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </p>
                             </div>
-        
+
                             <div class="portfolio-list__project">
                                 <h2 class="card__header">Видання Limited Edition</h2>
                                 <p class="card__text">Дизайн</p>
-        
+
                             </div>
                         </a>
                     </li>
                     <li class="portfolio-list__item">
                         <a class="portfolio__card" href="">
                             <div class="portfolio-wrap">
-        
-                                <img src="./images/label.jpg" alt="Паперова мітка" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/img1200-7.jpg, ./images/portfolio/img1200@2x-7.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/img768-7.jpg, ./images/portfolio/img768@2x-7.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/img480-7.jpg, ./images/portfolio/img480@2x-7.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/img-1200-7.jpg" alt="Паперова мітка">
+                                </picture>
+
                                 <p class="shadow__text">
-                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                    це
                                     дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </p>
                             </div>
-        
+
                             <div class="portfolio-list__project">
                                 <h2 class="card__header">Проєкт LAB</h2>
                                 <p class="card__text">Маркетинг</p>
-        
+
                             </div>
                         </a>
                     </li>
                     <li class="portfolio-list__item">
                         <a class="portfolio__card" href="">
                             <div class="portfolio-wrap">
-        
-                                <img src="./images/notebook.jpg" alt="Ноутбук" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/img1200-8.jpg, ./images/portfolio/img1200@2x-8.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/portfolio/img768-8.jpg, ./images/portfolio/img768@2x-8.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/portfolio/img480-8.jpg, ./images/portfolio/img480@2x-8.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/portfolio/img-1200-8.jpg" alt="Ноутбук">
+                                </picture>
+
                                 <p class="shadow__text">
-                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                    це
                                     дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </p>
                             </div>
-        
+
                             <div class="portfolio-list__project">
                                 <h2 class="card__header">Growing Business</h2>
                                 <p class="card__text">Додаток</p>
-        
+
                             </div>
                         </a>
                     </li>
@@ -237,53 +351,57 @@
             </div>
         </section>
     </main>
-    
+
     <footer class="footer">
         <div class="container foot">
             <div class="footer__block">
-                <div class="addr">
-                    <a href="./index.html" class="logo"><span class="logo-first">Web</span>Studio</a>
-                    <address>
-                        <ul class="addr__list">
-                            <li class="item"><a href="" class="addr__city">м. Київ, пр-т Лесі Українки, 26</a></li>
-                            <li class="item"><a href="mailto:info@devstudio.com" class="addr__mail-tel">info@devstudio.com</a></li>
-                            <li class="item"><a href="tel:+380961111111" class="addr__mail-tel">+38 096 111 11 11</a></li>
+                <div class="footer__tablet">
+                    <div class="addr">
+                        <a href="./index.html" class="logo"><span class="logo-first">Web</span>Studio</a>
+                        <address>
+                            <ul class="addr__list">
+                                <li class="item"><a href="" class="addr__city">м. Київ, пр-т Лесі Українки, 26</a></li>
+                                <li class="item"><a href="mailto:info@devstudio.com"
+                                        class="addr__mail-tel">info@devstudio.com</a></li>
+                                <li class="item"><a href="tel:+380961111111" class="addr__mail-tel">+38 096 111 11
+                                        11</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="social">
+                        <p class="social__title">приєднуйтесь</p>
+                        <ul class="social__list social__list--between">
+                            <li class="item">
+                                <a class="social__link" href="">
+                                    <svg class="social__svg" style="width: 20px; height: 20px">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="social__link" href="">
+                                    <svg class="social__svg" style="width: 20px; height: 20px">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="social__link" href="">
+                                    <svg class="social__svg" style="width: 20px; height: 20px">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="social__link" href="">
+                                    <svg class="social__svg" style="width: 20px; height: 20px">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
-                    </address>
-                
-                </div>
-                <div class="social">
-                    <p class="social__title">приєднуйтесь</p>
-                    <ul class="social__list social__list--between">
-                        <li class="item">
-                            <a class="social__link" href="">
-                                <svg class="social__svg" style="width: 20px; height: 20px">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a class="social__link" href="">
-                                <svg class="social__svg" style="width: 20px; height: 20px">
-                                    <use href="./images/icons.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a class="social__link" href="">
-                                <svg class="social__svg" style="width: 20px; height: 20px">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a class="social__link" href="">
-                                <svg class="social__svg" style="width: 20px; height: 20px">
-                                    <use href="./images/icons.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
                 <div class="subsc">
                     <p class="subsc__title">Підпишіться на розсилку</p>
@@ -293,14 +411,14 @@
                             <p class="subsc__button-title">Підписатися</p>
                             <svg class="subsc__button-svg">
                                 <use href="./images/icons.svg#icon-send"></use>
-                            </svg>                        
+                            </svg>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    
+
     <script src="./js/modal.js"></script>
 </body>
 

@@ -1,20 +1,23 @@
 .logo {
-    display: block;
-    margin-right: 93px;
-  
-    color: var(--title-text-color);
-    font-weight: 700;
+  display: block;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  font-family: Raleway, sans-serif;
+
+  @media screen and(min-width: $desktop) {
     font-size: 26px;
     line-height: 1.2;
-    font-family: Raleway, sans-serif;
   }
-  
+}
+
 .logo-first {
-    color: var(--select-text-color);
-  }
+  color: var(--select-text-color);
+}
 
 .footer .logo {
-    margin-bottom: 20px;
-  
-    color: var(--second-color-logo-footer);
-  }
+  margin-bottom: 20px;
+  color: var(--second-color-logo-footer);
+
+}

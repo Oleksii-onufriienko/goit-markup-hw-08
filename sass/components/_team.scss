@@ -5,10 +5,12 @@
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  
+  gap: 30px;
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   &__item {
     background-color: var(--button-select-text-color);
@@ -18,9 +20,20 @@
   }
 
   .team__card {
+
     display: block;
-    padding-top: 30px;
-    padding-bottom: 30px;
+        @media screen and(min-width: $mobile) {
+            padding: 30px 122px 24px 122px;
+          }
+        
+          @media screen and(min-width: $tablet) {
+            padding: 30px 74px 24px 74px;
+          }
+        
+          @media screen and(min-width: $desktop) {
+            padding: 30px 32px;
+          }
+
   }
 
   .team__title {
@@ -41,3 +54,13 @@
   }
 
 }
+
+// <picture>
+// <source srcset="./images/team/img-team-w270-1.jpg, ./images/team/img-team-w270-@2x-1.jpg 2x"
+// media="(min-width: 1200px)">
+// <source srcset="./images/team/img-team-w354-1.jpg, ./images/team/img-team-w354@2x-1.jpg 2x"
+// media="(min-width: 768px)">
+// <source srcset="./images/team/img-team-w450-1.jpg, ./images/team/img-team-w450-@2x-1.jpg 2x"
+// media="(min-width: 480px)">
+// <img class="team__image" src="./images/team-card-2.jpg" alt="Фото Ольги Репіної">
+// </picture>
