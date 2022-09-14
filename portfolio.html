@@ -17,12 +17,54 @@
     <header class="page__header">
         <nav class="container main-nav">
             <a href="./index.html" class="logo"><span class="logo-first">Web</span>Studio</a>
+            <button type="button" class="burger-button" data-menu-button>
+                <svg style="width: 40px; height: 40px" aria-label="Перемикач мобільного меню">
+                    <use class="icon-cross" href="./images/icons.svg#icon-close_40px"></use>
+                    <use class="icon-burger" href="./images/icons.svg#icon-menu_burger"></use>
+                </svg>
+            </button>
+            <div class="mobile-container" data-menu>
+                <ul class="mobile-site-nav">
+                    <li class="mobile-site-nav__item"><a class="mobile-site-nav__link current"
+                            href="./index.html">Студія</a></li>
+                    <li class="mobile-site-nav__item"><a class="mobile-site-nav__link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="mobile-site-nav__item"><a class="mobile-site-nav__link" href="">Контакти</a></li>
+                </ul>
+                <ul class="mobile-auth-nav">
+                    <li class="auth-nav__item">
+                        <a class="auth-nav__phone" href="#">
+                            <p>+38 096 111 11 11</p>
+                        </a>
+                    </li>
+                    <li class="auth-nav__item">
+                        <a class="auth-nav__mail" href="#">
+                            <p>info@devstudio.com</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mobile-social">
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="#">Instagram</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="#">Twitter</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="#">Facebook</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+    
+            </div>
             <ul class="site-nav">
-                <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студія</a></li>
-                <li class="site-nav__item"><a class="site-nav__link current" href="./portfolio.html">Портфоліо</a></li>
+                <li class="site-nav__item"><a class="site-nav__link current" href="./index.html">Студія</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфоліо</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="">Контакти</a></li>
             </ul>
-
+    
             <ul class="auth-nav">
                 <li class="auth-nav__item">
                     <a class="auth-nav__link" href="mailto:info@devstudio.com">
