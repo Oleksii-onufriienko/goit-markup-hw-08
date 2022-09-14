@@ -149,13 +149,13 @@
     &__input {
       margin: 0;
       padding: 15px 16px;
-      width: 450px;
-      // height: 50px;
+      max-width: 450px;
+      width: 100%;
       margin-bottom: 20px;
       margin-right: auto;
 
       @media screen and(min-width: $desktop) {
-        width: 358px;
+        max-width: 358px;
         margin-bottom: 0px;
 
       }

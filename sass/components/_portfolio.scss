@@ -52,20 +52,20 @@
     position: absolute;
     top: 0;
     left: 0;
-
+    width: 100%;
     @media screen and(min-width: $mobile) {
-      width: 450px;
+      max-width: 450px;
 
       padding: 77px 24px;
     }
 
     @media screen and(min-width: $tablet) {
-      width: 354px;
+      max-width: 354px;
       padding: 77px 24px;
     }
 
     @media screen and(min-width: $desktop) {
-      width: 370px;
+      max-width: 370px;
 
       padding: 63px 24px;
     }
@@ -115,6 +115,7 @@
       padding: 20px 24px;
       border: 1px solid #eeeeee;
       border-top: transparent;
+      width: 100%;
 
       @media screen and(min-width: $mobile) {
         max-width: 450px;

@@ -5,12 +5,8 @@
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  
-  gap: 30px;
 
-  // &__item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  gap: 30px;
 
   &__item {
     background-color: var(--button-select-text-color);
@@ -19,20 +15,40 @@
     border-radius: 0px 0px 4px 4px;
   }
 
+  .team__picture {
+    width: 100%;
+
+    @media screen and(min-width: $mobile) {
+      width: 100%;
+      max-width: 450px;
+    }
+
+    @media screen and(min-width: $tablet) {
+      width: 100%;
+      max-width: 354px;
+    }
+
+    @media screen and(min-width: $desktop) {
+      width: 100%;
+      max-width: 270px;
+    }
+  }
+
   .team__card {
 
     display: block;
-        @media screen and(min-width: $mobile) {
-            padding: 30px 122px 24px 122px;
-          }
-        
-          @media screen and(min-width: $tablet) {
-            padding: 30px 74px 24px 74px;
-          }
-        
-          @media screen and(min-width: $desktop) {
-            padding: 30px 32px;
-          }
+
+    @media screen and(min-width: $mobile) {
+      padding: 30px 122px 24px 122px;
+    }
+
+    @media screen and(min-width: $tablet) {
+      padding: 30px 74px 24px 74px;
+    }
+
+    @media screen and(min-width: $desktop) {
+      padding: 30px 32px;
+    }
 
   }
 
