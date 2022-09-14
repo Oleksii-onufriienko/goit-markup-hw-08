@@ -16,13 +16,13 @@
 
   &--padd-minus {
 
-    @media screen and(min-width: $mobile) {
-      display: none;
-    }
-
-    @media screen and(min-width: $tablet) {
-      display: none;
-    }
+    // @media screen and(min-width: $mobile) {
+    //   display: none;
+    // }
+ display: none;
+    // @media screen and(min-width: $tablet) {
+    //   display: none;
+    // }
 
     @media screen and(min-width: $desktop) {
       display: block;
