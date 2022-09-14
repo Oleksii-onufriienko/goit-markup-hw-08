@@ -375,13 +375,13 @@ img {
   background-color: var(--button-select-text-color);
   border: transparent;
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 
 .mobile-site-nav {
@@ -500,7 +500,6 @@ img {
 
 .burger-button {
   display: inline-flex;
-  z-index: 999;
   margin: 0px;
   padding: 0px;
   border: none;
@@ -528,6 +527,7 @@ img {
 
 .mobile-container {
   display: none;
+  background-color: grey;
   position: absolute;
   top: 100%;
   left: 0;
@@ -1296,7 +1296,6 @@ img {
   margin: 0;
   padding: 15px 16px;
   width: 450px;
-  height: 50px;
   margin-bottom: 20px;
   margin-right: auto;
   border: 1px solid rgba(255, 255, 255, 0.3);

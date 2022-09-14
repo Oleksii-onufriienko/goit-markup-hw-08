@@ -3,14 +3,14 @@
   background-color: var(--button-select-text-color);
   border: transparent;
   border-bottom: 1px solid #ececec;
-  // position: relative;
+  position: relative;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-    position: relative;
+    // position: relative;
 }
 
 .mobile-site-nav {
@@ -156,7 +156,7 @@
 
 .burger-button {
   display: inline-flex;
-  z-index: 999;
+
   @media screen and(min-width: $tablet) {
     display: none;
   }
@@ -185,6 +185,7 @@
 
 .mobile-container {
   display: none;
+  background-color: grey;
 
   position: absolute;
   top: 100%;
