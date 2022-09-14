@@ -826,22 +826,20 @@ img {
 }
 .team-list .team__picture {
   width: 100%;
+  height: auto;
 }
 @media screen and (min-width: 479.98px) {
   .team-list .team__picture {
-    width: 100%;
     max-width: 450px;
   }
 }
 @media screen and (min-width: 767.98px) {
   .team-list .team__picture {
-    width: 100%;
     max-width: 354px;
   }
 }
 @media screen and (min-width: 1199.98px) {
   .team-list .team__picture {
-    width: 100%;
     max-width: 270px;
   }
 }
