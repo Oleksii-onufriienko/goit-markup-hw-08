@@ -6,11 +6,12 @@
 
 }
 
-body{
-  &.scroll-loc{
+body {
+  &.scroll-loc {
     overflow: hidden;
   }
 }
+
 .mobile-container {
   display: flex;
   padding: 15px;
@@ -20,30 +21,33 @@ body{
 
 
   @media screen and(min-width: $tablet) {
-      display: none;
+    display: none;
   }
-  .mobile-menu-box{
+
+  .mobile-menu-box {
     position: fixed;
+    padding: 48px 40px;
     z-index: 9;
     display: none;
-      overflow: auto;
+    overflow: auto;
+
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-    padding: 15px;
+
 
     flex-direction: column;
     justify-content: space-between;
     background-color: #ffffff;
 
     &.is-open {
-         display: flex;
-         }
+      display: flex;
+    }
 
   }
-  
-   .mobile-site-nav {
+
+  .mobile-site-nav {
     display: block;
     text-align: left;
 
@@ -62,6 +66,7 @@ body{
       &.current {
         color: var(--select-text-color);
       }
+
       &:hover,
       &:focus {
         color: var(--select-text-color);
@@ -98,9 +103,8 @@ body{
     }
   }
 
-    .mobile-social {
+  .mobile-social {
     display: flex;
-    justify-content: space-between;
 
     .mobile-social__link {
       font-weight: 500;
@@ -109,136 +113,144 @@ body{
       letter-spacing: 0.02em;
       color: #2196F3;
     }
-
+    .mobile-social__st{
+      margin-left: 10px;
+      margin-right: 10px;
+      color:  rgba(33, 33, 33, 0.2);
     }
   }
+}
 
-  .burger-button {
-    display: inline-flex;
-    z-index: 10;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-  
-    margin: 0px;
-    padding: 0px;
-    border: none;
-    background-color: transparent;
+.burger-button {
+  display: inline-flex;
+  z-index: 10;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  fill: #000000;
+  cursor: pointer;
+
+  .icon-cross {
+    display: none;
     fill: #000000;
-    cursor: pointer;
-
-    .icon-cross {
-      display: none;
-      fill: #000000;
-    }
-
-    &.is-open .icon-cross {
-      display: block;
-      fill: #000000;
-    }
-
-    &.is-open .icon-burger {
-      display: none;
-      fill: #000000;
-    }
-    &:hover,
-    &:focus {
-      fill: var(--select-text-color);
-    }
-
   }
+
+  &.is-open .icon-cross {
+    display: block;
+    fill: #000000;
+  }
+
+  &.is-open .icon-burger {
+    display: none;
+    fill: #000000;
+  }
+
+  &:hover,
+  &:focus {
+    fill: var(--select-text-color);
+  }
+
+}
 
 
 .menu-desktop {
   display: none;
   align-items: center;
   justify-content: space-between;
-  @media screen and(min-width: $tablet) {
-      display: flex;
-   }
 
-  .menu-deskop--justify{
+  @media screen and(min-width: $tablet) {
+    display: flex;
+  }
+
+  .menu-deskop--justify {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-    .site-nav {
-      display: flex;
-      margin-left: 92px;
-      @media screen and(max-width: $tablet) {
-        display: none;
-      }
-  
-      &__item:not(:last-child) {
-        margin-right: 50px;
-      }
-  
-      &__link {
-        position: relative;
-  
-        display: block;
-        padding: 32px 0;
-  
-        color: var(--title-text-color);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-  
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-        &.current {
-          color: var(--select-text-color);
-        }
-  
-        &.current::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: 0;
-  
-          display: block;
-          width: 100%;
-          height: 4px;
-          background: var(--button-select-color);
-          border-radius: 2px;
-  
-          opacity: 1;
-          transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-  
-        &:hover,
-        &:focus {
-          color: var(--select-text-color);
-        }
-  
-      }
+
+  .site-nav {
+    display: flex;
+    margin-left: 92px;
+
+    @media screen and(max-width: $tablet) {
+      display: none;
     }
-  
-    .auth-nav {
-  
+
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    &__link {
+      position: relative;
+
       display: block;
-  
-      @media screen and(max-width: $tablet) {
-        display: none;
+      padding: 32px 0;
+
+      color: var(--title-text-color);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &.current {
+        color: var(--select-text-color);
       }
-  
-      @media screen and(min-width: $desktop) {
-        display: flex;
+
+      &.current::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: var(--button-select-color);
+        border-radius: 2px;
+
+        opacity: 1;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
-  
-      &__item:not(:last-child) {
-        margin-right: 0px;
-        margin-bottom: 10px;
-  
-        @media screen and(min-width: $desktop) {
-          margin-right: 50px;
-          margin-bottom: 0px;
-        }
-  
+
+      &:hover,
+      &:focus {
+        color: var(--select-text-color);
       }
-  
+
     }
+  }
+
+  .auth-nav {
+
+    display: block;
+
+    @media screen and(max-width: $tablet) {
+      display: none;
+    }
+
+    @media screen and(min-width: $desktop) {
+      display: flex;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 0px;
+      margin-bottom: 10px;
+
+      @media screen and(min-width: $desktop) {
+        margin-right: 50px;
+        margin-bottom: 0px;
+      }
+
+    }
+
+  }
 }
 
 .main-nav {
