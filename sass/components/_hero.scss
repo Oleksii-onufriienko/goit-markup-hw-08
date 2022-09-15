@@ -4,7 +4,7 @@
     padding-bottom: 118px;
     max-width: 768px;
     max-height: 400px;
-    width: 100%;
+    max-width: 100%;
     // background-position: 50% 50%;
 
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@
       url("../images/header/Header-480.jpg");
 
     @media screen and(min-width: $tablet) {
-      max-width: 1200px;
+      // max-width: 1200px;
       max-height: 400px;
 
       background-image: linear-gradient(to right,
@@ -31,7 +31,7 @@
     }
 
     @media screen and(min-width: $desktop) {
-      max-width: 1600px;
+      // max-width: 100%;
       max-height: 600px;
       padding-top: 200px;
       padding-bottom: 200px;

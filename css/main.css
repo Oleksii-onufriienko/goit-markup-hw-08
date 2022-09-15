@@ -376,7 +376,10 @@ img {
   background-color: var(--button-select-text-color);
   border: transparent;
   border-bottom: 1px solid #ececec;
-  position: relative;
+}
+
+body.scroll-loc {
+  overflow: hidden;
 }
 
 .mobile-container {
@@ -384,6 +387,7 @@ img {
   padding: 15px;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 @media screen and (min-width: 767.98px) {
   .mobile-container {
@@ -394,6 +398,7 @@ img {
   position: fixed;
   z-index: 9;
   display: none;
+  overflow: auto;
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -464,22 +469,30 @@ img {
 .burger-button {
   display: inline-flex;
   z-index: 10;
-  position: fixed;
+  position: absolute;
   right: 15px;
   top: 10px;
   margin: 0px;
   padding: 0px;
   border: none;
   background-color: transparent;
+  fill: #000000;
+  cursor: pointer;
 }
 .burger-button .icon-cross {
   display: none;
+  fill: #000000;
 }
 .burger-button.is-open .icon-cross {
   display: block;
+  fill: #000000;
 }
 .burger-button.is-open .icon-burger {
   display: none;
+  fill: #000000;
+}
+.burger-button:hover, .burger-button:focus {
+  fill: var(--select-text-color);
 }
 
 .menu-desktop {
@@ -648,7 +661,7 @@ img {
   padding-bottom: 118px;
   max-width: 768px;
   max-height: 400px;
-  width: 100%;
+  max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -656,14 +669,12 @@ img {
 }
 @media screen and (min-width: 767.98px) {
   .hero_section {
-    max-width: 1200px;
     max-height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/Header-768.jpg");
   }
 }
 @media screen and (min-width: 1199.98px) {
   .hero_section {
-    max-width: 1600px;
     max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -1355,6 +1366,11 @@ img {
   margin-right: auto;
   min-width: 200px;
   min-height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1366,15 +1382,8 @@ img {
     margin-right: 0px;
   }
 }
-.footer .subsc__button-title {
-  margin-right: 10px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #FFFFFF;
-}
 .footer .subsc__button-svg {
+  margin-left: 10px;
   width: 24px;
   height: 24px;
   fill: var(--addr-color-city);

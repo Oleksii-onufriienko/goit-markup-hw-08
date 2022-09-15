@@ -3,14 +3,21 @@
   background-color: var(--button-select-text-color);
   border: transparent;
   border-bottom: 1px solid #ececec;
-  position: relative;
+
 }
 
+body{
+  &.scroll-loc{
+    overflow: hidden;
+  }
+}
 .mobile-container {
   display: flex;
   padding: 15px;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+
 
   @media screen and(min-width: $tablet) {
       display: none;
@@ -19,7 +26,7 @@
     position: fixed;
     z-index: 9;
     display: none;
-
+      overflow: auto;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -105,10 +112,11 @@
 
     }
   }
+
   .burger-button {
     display: inline-flex;
     z-index: 10;
-    position: fixed;
+    position: absolute;
     right: 15px;
     top: 10px;
   
@@ -116,17 +124,26 @@
     padding: 0px;
     border: none;
     background-color: transparent;
+    fill: #000000;
+    cursor: pointer;
 
     .icon-cross {
       display: none;
+      fill: #000000;
     }
 
     &.is-open .icon-cross {
       display: block;
+      fill: #000000;
     }
 
     &.is-open .icon-burger {
       display: none;
+      fill: #000000;
+    }
+    &:hover,
+    &:focus {
+      fill: var(--select-text-color);
     }
 
   }
