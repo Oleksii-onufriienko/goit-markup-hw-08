@@ -18,70 +18,82 @@
 <body class="page">
     <header class="page__header">
         <nav class="container main-nav">
-            <a href="./index.html" class="logo"><span class="logo-first">Web</span>Studio</a>
-            <button type="button" class="burger-button" data-menu-button>
-                <svg style="width: 40px; height: 40px" aria-label="Перемикач мобільного меню">
-                    <use class="icon-cross" href="./images/icons.svg#icon-close_40px"></use>
-                    <use class="icon-burger" href="./images/icons.svg#icon-menu_burger"></use>
-                </svg>
-            </button>
-            <div class="mobile-container" data-menu>
-                <ul class="mobile-site-nav">
-                    <li class="mobile-site-nav__item"><a class="mobile-site-nav__link current" href="./index.html">Студія</a></li>
-                    <li class="mobile-site-nav__item"><a class="mobile-site-nav__link" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="mobile-site-nav__item"><a class="mobile-site-nav__link" href="">Контакти</a></li>
-                </ul>
-                <ul class="mobile-auth-nav">
+            <div class="mobile-container">
+                <a class="logo" href="./index.html"><span class="logo-first">Web</span>Studio</a>
+                <button type="button" class="burger-button" data-menu-button>
+                    <svg style="width: 40px; height: 40px" aria-label="Перемикач мобільного меню">
+                        <use class="icon-cross" href="./images/icons.svg#icon-close_40px"></use>
+                        <use class="icon-burger" href="./images/icons.svg#icon-menu_burger"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu-box" data-menu>
+                    <ul class="mobile-site-nav">
+                        <li class="mobile-site-nav__item"><a class="mobile-site-nav__link current"
+                                href="./index.html">Студія</a></li>
+                        <li class="mobile-site-nav__item"><a class="mobile-site-nav__link"
+                                href="./portfolio.html">Портфоліо</a></li>
+                        <li class="mobile-site-nav__item"><a class="mobile-site-nav__link" href="">Контакти</a></li>
+                    </ul>
+                    <div class="mobile-bottom">
+                        <ul class="mobile-auth-nav">
+                            <li class="auth-nav__item">
+                                <a class="auth-nav__phone" href="#">
+                                    <p>+38 096 111 11 11</p>
+                                </a>
+                            </li>
+                            <li class="auth-nav__item">
+                                <a class="auth-nav__mail" href="#">
+                                    <p>info@devstudio.com</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-social">
+                            <li class="mobile-social__item">
+                                <a class="mobile-social__link" href="#">Instagram</a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a class="mobile-social__link" href="#">Twitter</a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a class="mobile-social__link" href="#">Facebook</a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a class="mobile-social__link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-desktop">
+                <div class="menu-deskop--justify">
+                    <a class="logo" href="./index.html"><span class="logo-first">Web</span>Studio</a>
+                    <ul class="site-nav">
+                        <li class="site-nav__item"><a class="site-nav__link current" href="./index.html">Студія</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфоліо</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="">Контакти</a></li>
+                    </ul>
+                </div>
+                <ul class="auth-nav">
                     <li class="auth-nav__item">
-                        <a class="auth-nav__phone" href="#">
-                            <p>+38 096 111 11 11</p>
-                        </a>
-                    </li>
-                    <li class="auth-nav__item">
-                        <a class="auth-nav__mail" href="#">
+                        <a class="auth-nav__link" href="mailto:info@devstudio.com">
+                            <svg class="auth-nav__svg" style="width: 16px; height: 12px">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
                             <p>info@devstudio.com</p>
                         </a>
                     </li>
-                </ul>
-                <ul class="mobile-social">
-                    <li class="mobile-social__item">
-                       <a class="mobile-social__link" href="#">Instagram</a>
-                    </li>
-                    <li class="mobile-social__item">
-                       <a class="mobile-social__link" href="#">Twitter</a> </li>
-                    <li class="mobile-social__item">
-                        <a class="mobile-social__link"  href="#">Facebook</a>
-                    </li>
-                    <li class="mobile-social__item">
-                        <a class="mobile-social__link" href="">LinkedIn</a>
+                    <li class="auth-nav__item">
+                        <a class="auth-nav__link" href="tel:+380961111111">
+                            <svg class="auth-nav__svg" style="width: 10px; height: 16px">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            <p>+38 096 111 11 11</p>
+                        </a>
                     </li>
                 </ul>
-
             </div>
-            <ul class="site-nav">
-                <li class="site-nav__item"><a class="site-nav__link current" href="./index.html">Студія</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфоліо</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="">Контакти</a></li>
-            </ul>
 
-            <ul class="auth-nav">
-                <li class="auth-nav__item">
-                    <a class="auth-nav__link" href="mailto:info@devstudio.com">
-                        <svg class="auth-nav__svg" style="width: 16px; height: 12px">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        <p>info@devstudio.com</p>
-                    </a>
-                </li>
-                <li class="auth-nav__item">
-                    <a class="auth-nav__link" href="tel:+380961111111">
-                        <svg class="auth-nav__svg" style="width: 10px; height: 16px">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        <p>+38 096 111 11 11</p>
-                    </a>
-                </li>
-            </ul>
         </nav>
     </header>
 
@@ -189,7 +201,7 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <picture >
+                        <picture>
                             <source srcset="./images/team/team-img-1200.jpg, ./images/team/team-img-1200@2x.jpg 2x"
                                 media="(min-width: 1200px)">
                             <source srcset="./images/team/team-img-768.jpg, ./images/team/team-img-768@2x.jpg 2x"
@@ -291,7 +303,8 @@
                                 media="(min-width: 768px)">
                             <source srcset="./images/team/team-img-480-2.jpg, ./images/team/team-img-480@2x-2.jpg 2x"
                                 media="(min-width: 480px)">
-                            <img class="team__picture" src="./images/team/team-img-1200-2.jpg" alt="Фото Микола Тарасов">
+                            <img class="team__picture" src="./images/team/team-img-1200-2.jpg"
+                                alt="Фото Микола Тарасов">
                         </picture>
                         <div class="team__card">
                             <h3 class="team__title">Микола Тарасов</h3>
@@ -338,7 +351,8 @@
                                 media="(min-width: 768px)">
                             <source srcset="./images/team/team-img-480-3.jpg, ./images/team/team-img-480@2x-3.jpg 2x"
                                 media="(min-width: 480px)">
-                            <img class="team__picture" src="./images/team/team-img-1200-3.jpg" alt="Фото Михайло Єрмаков">
+                            <img class="team__picture" src="./images/team/team-img-1200-3.jpg"
+                                alt="Фото Михайло Єрмаков">
                         </picture>
                         <div class="team__card">
                             <h3 class="team__title">Михайло Єрмаков</h3>
